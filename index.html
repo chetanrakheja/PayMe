@@ -61,7 +61,9 @@ if (window.location.search.indexOf('pa') > -1) {
 	var user;
 	if(pn!=="") user=pn; 
 	else user=pa;
-	if(am!=="") user = user + "</b></u> <br> Amount - <b><u>" + am.toString() +"</b></u>"; 
+	
+	// if(am!=="") user = user + "</b></u> <br> Amount - <b><u>" + am.toString() +"</b></u>"; 
+
 	const url= 'upi://pay'+queryString;
 	document.getElementById("name").innerHTML = "Click on Pay Now or Scan QR Code and Pay using any UPI Apps <br>Your are Paying to - <b><u>"+user;
 	document.getElementById("Payme").href = url;
