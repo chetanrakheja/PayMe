@@ -54,13 +54,12 @@
 			</div>
 		</div>
 	</center>
-
-</body>
 <script>
 if (window.location.search.indexOf('pa')> -1) {
     const q = window.location.search;
 	const url= 'https://chetanrakheja.github.io/PayMe/'+q+'&cu=INR';
-	// const url= 'file:///D:/linkPe/linkpe/index.html'+q+'&cu=INR';
+	// const url= 'https://chetanrakheja.com/PayMe/'+q+'&cu=INR';
+	// const url= 'file:///D:/linkPe/linkpe/index.html'+q+'&cu=INR';	
 	document.getElementById("paymeURL").innerHTML =url;
 	document.getElementById("whatsapp").href="https://wa.me/?text=Hi%2C%20You%20can%20pay%20me%20by%20this%20Upi%20Payment%20Link%0A%20"+encodeURIComponent(url);
 	document.getElementById("paymediv").style.display="block";
@@ -74,4 +73,5 @@ function copyUpiUrl() {
   document.getElementById("btn-copy").innerHTML = "Copied";
 }
 </script>
+</body>
 </html>
